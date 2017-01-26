@@ -7,10 +7,9 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <h1>Магазин готовых шаблонов</h1>
         <nav class="main-navigation">
           <a href="#">
-            <img class="logo" src="#" alt="Логотип Нёрдс">
+            <img class="logo" src="img/nerds-logo.png" alt="Логотип Нёрдс">
           </a>
           <ul>
             <li><a href="#">Студия</a></li>
@@ -22,32 +21,32 @@
         <div class="user-block">
           <a class="basket" href="#">Корзина</a>
         </div>
+        <h1>Магазин готовых шаблонов</h1>
       </div>
     </header>
-      <div class="filters">
-        <div class="price-filter">
-          <h3>Стоимость:</h3>
-          <form action="#" method="get">
+    <main class="container">
+      <section class="filters">
+        <form action="#" method="get">
+          <div class="filter-box">
+            <h3>Стоимость:</h3>
+            <!--Здесь может быть ̶в̶а̶ш̶а̶ ̶р̶е̶к̶л̶  ползунок<div></div>-->
+            <!--Здесь может быть ̶в̶а̶ш̶а̶ ̶р̶е̶к̶л̶  ползунок<div></div>-->
             <label for="price-from-field">От</label>
             <input type="text" name="price-from" id="price-from-field" value="0">
             <label for="price-to-field">До</label>
             <input type="text" name="price-to" id="price-to-field" value="15000">
-          </form>
-        </div>
-        <div class="grid-filter">
-          <h3>Сетка:</h3>
-          <form action="#" method="get">
+          </div>
+          <div class="filter-box">
+            <h3>Сетка:</h3>
             <input type="radio" name="grid-choice" id="adaptive-grid-field" value="adaptive">
             <label for="adaptive-grid-field">Адаптивная</label>
             <input type="radio" name="grid-choice" id="fixed-grid-field" value="fixed">
             <label for="fixed-grid-field">Фиксированная</label>
             <input type="radio" name="grid-choice" id="elastic-grid-field" value="elastic">
             <label for="elastic-grid-field">Резиновая</label>
-          </form>
-        </div>
-        <div class="features-filter">
-          <h3>Особенности:</h3>
-          <form action="#" method="get">
+          </div>
+          <div class="filter-box">
+            <h3>Особенности:</h3>
             <input type="radio" name="features-choice" id="slider-field" value="slider">
             <label for="slider-field">Слайдер</label>
             <input type="radio" name="features-choice" id="advantages-unit-field" value="advantages-unit">
@@ -58,66 +57,84 @@
             <label for="gallery-field">Галерея</label>
             <input type="radio" name="features-choice" id="basket-field" value="basket">
             <label for="basket-field">Корзина</label>
-          </form>
-        </div>
-        <form action="#" method="get">
+          </div>
           <input class="show-button" type="submit" value="Показать">
         </form>
-      </div>
-    <main class="container">
-      <div class="sorting-filters">
-        <h3>Сортировать:</h3>
-        <form action="#" method="get">
-          <input type="radio" name="sorting-choice" id="sorting-price-field" value="sort-by-price">
-          <label for="sorting-price-field">По цене</label>
-          <input type="radio" name="sorting-choice" id="sorting-type-field" value="sort-by-type">
-          <label type="sorting-type-field">По типу</label>
-          <input type="radio" name="sorting-choice" id="sorting-name-field" value="sort-by-name">
-          <label for="sorting-name-field">По названию</label>
-        </form>
-      </div>
-      <section class="buy-block">
-        <div class="sedona-block">
-          <div class="mac-head"><img src="#"></div>
-          <div class="sedona-card"><img src="#"></div>
-        </div>
-        <div class="pink-block">
-          <div class="mac-head"><img src="#"></div>
-          <div class="pink-card"><img src="#"></div>
-        </div>
-        <div class="borodinski-block">
-          <div class="mac-head"><img src="#"></div>
-          <div class="borodinski-card"><img src="#"></div>
-        </div>
-        <div class="mishka-block">
-          <div class="mac-head"><img src="#"></div>
-          <div class="mishkas-card"><img src="#"></div>
-        </div>
-        <div class="a-plus-block">
-          <div class="mac-head"><img src="#"></div>
-          <div class="a-plus-card"><img src="#"></div>
-        </div>
-        <div class="kvast-block">
-          <div class="mac-head"><img src="#"></div>
-          <div class="kvast-card"><img src="#"></div>
-        </div>
       </section>
+      <article class="gallery">
+        <div class="sorting-filters">
+          <h3>Сортировать:</h3>
+          <button>По цене</button>
+          <button>По типу</button>
+          <button>По названию</button>
+          <button>По убыванию</button>
+          <button>По возрастанию</button>
+        </div>
+        <div class="gallery-card">
+          <div class="mac-head"><img src="img/mac-head.png"></div>
+          <img src="img/sedona-preview.jpg">
+          <div class="buy-block">
+            <a href=#>Sedona</a>
+            <p>Информационный сайт для туристов</p>
+            <button>9 900 руб.</button>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="mac-head"><img src="img/mac-head.png"></div>
+          <img src="img/pink-preview.jpg">
+          <div class="buy-block">
+            <a href="#">Pink app</a>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <button>9 900 руб.</button>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="mac-head"><img src="img/mac-head.png"></div>
+          <img src="img/borodinski-preview.jpg">
+          <div class="buy-block">
+            <a href="#">Barbershop</a>
+            <p>Сайт салона красоты. Для мужчин, да.</p>
+            <button>9 900 руб.</button>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="mac-head"><img src="img/mac-head.png"></div>
+          <img src="img/mishka-preview.jpg">
+          <div class="buy-block">
+            <a href="">Mishka</a>
+            <p>Интернет-магазин вязаных игрушек</p>
+            <button>9 900 руб.</button>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="mac-head"><img src="img/mac-head.png"></div>
+          <img src="img/aplus-preview.jpg">
+          <div class="buy-block">
+            <a href="#">A plus</a>
+            <p>Лендинг курсов повышения квалификации</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="mac-head"><img src="img/mac-head.png"></div>
+          <img src="img/kvast-preview.jpg">
+          <div class="buy-block">
+            <a href="#">Kvast</a>
+            <p>Промо-сайт производителя крафтового кваса</p>
+            <button>9 900 руб.</button>
+          </div>
+        </div>
+      </article>
       <div class="pagination">
-        <form action="#" method="get">
-          <input type="radio" name="page-choice" id="page-first-field" value="first-page">
-          <label for="page-first-field">1</label>
-          <input type="radio" name="page-choice" id="page-second-field" value="second-page">
-          <label for="page-second-field">2</label>
-          <input type="radio" name="page-choice" id="page-third-field" value="third-page">
-          <label for="page-third-field">3</label>
-          <input type="radio" name="page-choice" id="page-next-field" value="next-page">
-          <label for="page-next-field">Следующая</label>
-        </form>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Следующая</a>
       </div>
     </main>
     <div class="map">
+      <img src=#>
       <div class="contacts">
-        <h3>NЁRDS DESIGN STUDIO</h3>
+        <h3>Nёrds design studio</h3>
         <p>191186, Санкт-Петербург,
           ул. Б. Конюшенная, д. 19/8</p>
         <a href="tel:+7(812)275-75-75">тел.+7 (812) 275-75-75</a>
@@ -137,6 +154,7 @@
         </div>
       </div>
     </footer>
+<!--<div class="feedback"></div>-->
   </body>
 </html>
   
