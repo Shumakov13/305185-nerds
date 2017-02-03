@@ -2,12 +2,14 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #283136;
+  font-family: Roboto;
 }
 
 h2 {
-  font-size: 45px;
-  line-height: 45px;
+  font-size: 55px;
+  line-height: 55px;
   color: #000000;
+  font-weight: 500px;
 }
 
 h3 {
@@ -15,6 +17,11 @@ h3 {
   line-height: 30px;
   font-weight: bold;
   color: #000000;
+  text-transform: uppercase;
+}
+
+section {
+  border-bottom: 2px solid #eee;
 }
 
 div, article, header, footer, section, a, p, nav {
@@ -25,6 +32,7 @@ outline: 1px solid red;
 
 .main-header {
   margin-top: 42px;
+  min-height: 504px;
 }
 
 .container {
@@ -37,19 +45,33 @@ outline: 1px solid red;
 .logo {
   width: 160px;
   float: left;
-  margin-right: 200px;
+  margin-right: 201px;
+  vertical-align: bottom;
+  padding-top: 7px;
 }
 
 .main-navigation {
-  width: 440px;
+  width: 492px;
   float: left;
-  margin-right: 200px;
+  margin-right: 190px;
   margin-bottom: 18px;
 }
 
+.main-navigation li {
+  display: inline-block;
+  margin-right: 34px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 30px;
+}
+
 .user-block {
-  width: 160px;
   float: right;
+  width: 115px;
+  min-height: 55px;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .clearfix::after {
@@ -58,32 +80,60 @@ outline: 1px solid red;
   clear: both;
 }
 
-.slide-1 {
-  width: 1129px;
-  float: left;
+.slider {
+  width: 1160px;  
 }
+
+.slider h2 {
+  font-size: 55px;
+}
+
+.slide-1-text {
+  width: 401px;
+  min-height: 320px;
+  float: left;
+  margin-top: 22px;
+  
+}
+
+.slide-1 img {
+  width: 698px;
+  min-height: 413px;
+  float: right;
+  margin-right: 31px;
+  margin-top: 11px;
+  
+}
+
 .slide-2 {
-  width: 1129px;
+  display: none;
+  width: 760px;
   float: left;
 }
 
 .slide-3 {
-  width: 1129px;
+  display: none;
+  width: 760px;
   float: right;
 }
 
 .features {
   margin-bottom: 80px;
+  min-height: 427px;
+}
+
+.features-name {
+  min-height: 30px;
 }
 
 .features-item {
   float: left;
   width: 300px;
   margin-right: 100px;
-  padding: 10px;
+  min-height: 300px;
 }
 
-.features-item:last-child {
+.features-item:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -99,7 +149,6 @@ outline: 1px solid red;
 
 .customers {
   display: inline-block;
-  width: 1160px;
   min-height: 181px;
   font-size: 0px;
 }
