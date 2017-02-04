@@ -20,8 +20,14 @@ h3 {
   text-transform: uppercase;
 }
 
-section {
-  border-bottom: 2px solid #eee;
+h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.btn {
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 div, article, header, footer, section, a, p, nav {
@@ -32,7 +38,7 @@ outline: 1px solid red;
 
 .main-header {
   margin-top: 42px;
-  min-height: 504px;
+  background-color: #eee;
 }
 
 .container {
@@ -45,30 +51,32 @@ outline: 1px solid red;
 .logo {
   width: 160px;
   float: left;
-  margin-right: 201px;
+  margin-right: 152px;
   vertical-align: bottom;
   padding-top: 7px;
 }
 
 .main-navigation {
-  width: 492px;
   float: left;
-  margin-right: 190px;
-  margin-bottom: 18px;
+  margin-bottom: 5px;
+  min-height: 85px;
 }
 
 .main-navigation li {
   display: inline-block;
-  margin-right: 34px;
+  margin-right: 22px;
+  margin-top: 19px;
   text-transform: uppercase;
   font-weight: 500;
-  line-height: 30px;
+}
+
+.main-navigation a {
+  padding: 10px;
 }
 
 .user-block {
   float: right;
-  width: 115px;
-  min-height: 55px;
+  padding-top: 35px;
   text-align: right;
   text-transform: uppercase;
   font-weight: 500;
@@ -80,20 +88,21 @@ outline: 1px solid red;
   clear: both;
 }
 
-.slider {
-  width: 1160px;  
-}
-
-.slider h2 {
-  font-size: 55px;
-}
-
 .slide-1-text {
   width: 401px;
   min-height: 320px;
   float: left;
-  margin-top: 22px;
-  
+  margin-top: 12px; 
+}
+
+.slide-1 p {
+  margin-top: -15px;
+}
+
+.slide-1 .btn {
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 55px;
 }
 
 .slide-1 img {
@@ -101,7 +110,6 @@ outline: 1px solid red;
   min-height: 413px;
   float: right;
   margin-right: 31px;
-  margin-top: 11px;
   
 }
 
@@ -119,43 +127,85 @@ outline: 1px solid red;
 
 .features {
   margin-bottom: 80px;
-  min-height: 427px;
 }
 
 .features-name {
-  min-height: 30px;
+  margin-top: 16px;
+}
+
+.features-item p {
+  margin-top: -6px;
 }
 
 .features-item {
   float: left;
   width: 300px;
   margin-right: 100px;
-  min-height: 300px;
+  min-height: 347px;
 }
 
 .features-item:nth-child(3n) {
   margin-right: 0;
 }
 
+.features-item .btn {
+  display: inline-block;
+  margin-top: 32px;
+  margin-left: 39px;
+}
+
+.about-us {
+  border-top: 2px solid #eee;
+  min-height: 499px;
+}
+
 .about-left {
   width: 660px;
   float: left;
+  padding-top: 35px;
+}
+
+.about-left h2 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about-left p {}
+
+.about-left h4 {
+  padding-top: 15px;
+}
+
+.about-left li {
+  font-size: 16px;
+  line-height: 40px;
 }
 
 .about-right {
   width: 360px;
   float: right;
+  padding-top: 40px;
+}
+
+.about-right h4 {
+  text-align: center;
+  padding-top: 8px;
+}
+
+.about-right th {
+  font-size: 45px;
+  padding-top: 27px;
 }
 
 .customers {
-  display: inline-block;
-  min-height: 181px;
+  min-height: 180px;
   font-size: 0px;
+  margin-top: 26px;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
 }
 
-.customers-logo {
-  margin-right: 40px;
-}
+
 
 .contacts {
   width: 319px;
