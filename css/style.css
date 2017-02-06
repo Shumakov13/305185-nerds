@@ -211,6 +211,11 @@ outline: 1px solid red;
     
 }
 
+.map {
+  position: relative;
+  right: 140px;
+}
+
 .contacts {
   width: 319px;
 }
