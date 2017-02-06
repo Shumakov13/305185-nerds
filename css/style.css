@@ -217,7 +217,11 @@ outline: 1px solid red;
 }
 
 .contacts {
+  position: absolute;
+  top: 55px;
+  margin-left: 140px;
   width: 319px;
+  min-height: 310px;
 }
 
 .footer-social {
