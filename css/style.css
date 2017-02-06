@@ -37,8 +37,9 @@ outline: 1px solid red;
 
 
 .main-header {
-  margin-top: 42px;
+  padding-top: 42px;
   background-color: #eee;
+  min-height: 315px;
 }
 
 .container {
@@ -205,7 +206,10 @@ outline: 1px solid red;
   border-bottom: 2px solid #eee;
 }
 
-
+.customers-logo {
+  display: inline-block;
+    
+}
 
 .contacts {
   width: 319px;
