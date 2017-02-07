@@ -1,33 +1,66 @@
 body {
+  min-width: 1200px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
+  background: #ffffff;
 }
 
 h2 {
+  font-weight: 500px;
   font-size: 55px;
   line-height: 55px;
   color: #000000;
-  font-weight: 500px;
 }
 
 h3 {
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
   color: #000000;
   text-transform: uppercase;
 }
 
 h4 {
+  font-weight: 700;
   font-size: 16px;
+  line-height: 24px;
+  color: #000000;
   text-transform: uppercase;
 }
 
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .btn {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff6f6;
+}
+
+.write-us {
+  display: inline-block;
+  margin-top: 27px;
+  padding: 15px 45px;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #fb565a;
+  color: #fff6f6;
 }
 
 div, article, header, footer, section, a, p, nav {
@@ -37,9 +70,10 @@ outline: 1px solid red;
 
 
 .main-header {
-  padding-top: 42px;
-  background-color: #eee;
   min-height: 315px;
+  padding-top: 42px;
+  color: #000000;
+  background-color: #eee;
 }
 
 .container {
@@ -73,14 +107,31 @@ outline: 1px solid red;
 
 .main-navigation a {
   padding: 10px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-navigation a:hover {
+  color: #fb565a;
 }
 
 .user-block {
   float: right;
-  padding-top: 35px;
+  padding-top: 25px;
   text-align: right;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+.user-block a {
+  display: inline-block;
+  padding: 10px 0;
+  color: #000000;
+  text-decoration: none;
+}
+
+.user-block a:hover {
+  color: #fb565a;
 }
 
 .clearfix::after {
@@ -93,17 +144,17 @@ outline: 1px solid red;
   width: 401px;
   min-height: 320px;
   float: left;
-  margin-top: 12px; 
+  margin-top: 13px; 
 }
 
 .slide-1 p {
-  margin-top: -15px;
+  margin-top: -18px;
 }
 
 .slide-1 .btn {
-  display: inline-block;
-  margin-top: 40px;
-  margin-left: 55px;
+  margin-top: 25px;
+  padding: 15px 54px;
+  background-color: #fb565a;
 }
 
 .slide-1 img {
@@ -131,7 +182,8 @@ outline: 1px solid red;
 }
 
 .features-name {
-  margin-top: 16px;
+  display: block;
+  margin-top: 18px;
 }
 
 .features-item p {
@@ -150,9 +202,17 @@ outline: 1px solid red;
 }
 
 .features-item .btn {
-  display: inline-block;
-  margin-top: 32px;
-  margin-left: 39px;
+  margin-top: 16px;
+  padding: 15px 40px;
+  background-color: #fb565a;
+}
+
+.features-item:nth-child(2) .btn {
+  background-color: #00ca74;
+}
+
+.features-item:nth-child(3) .btn {
+  background-color: #efc84a;
 }
 
 .about-us {
@@ -167,19 +227,25 @@ outline: 1px solid red;
 }
 
 .about-left h2 {
+  font-weight: 500;
   font-size: 45px;
   line-height: 45px;
+  margin-bottom: 35px;
 }
 
-.about-left p {}
+.about-left p {
+  
+}
 
 .about-left h4 {
-  padding-top: 15px;
+  display: block;
+  margin-top: 39px;
+  margin-bottom: 23px;
 }
 
 .about-left li {
-  font-size: 16px;
-  line-height: 40px;
+  display: block;
+  margin-bottom: 24px;
 }
 
 .about-right {
@@ -195,7 +261,14 @@ outline: 1px solid red;
 
 .about-right th {
   font-size: 45px;
-  padding-top: 27px;
+  line-height: 45px;
+  color: #000000;
+  padding-top: 18px;
+  text-align: left;
+}
+
+.about-right sup {
+  font-size: 25px;
 }
 
 .customers {
@@ -213,17 +286,27 @@ outline: 1px solid red;
 
 .map {
   position: relative;
-  right: 140px;
+  left: 232px;
+  
 }
 
 .contacts {
   position: absolute;
   top: 55px;
-  margin-left: 140px;
+  left: 140px;
   width: 319px;
   min-height: 310px;
   background-color: #ffffff;
+  text-align: center;
 }
+
+.contacts h3 {
+  margin-top: 48px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
 
 .footer-social {
   display: inline-block;
