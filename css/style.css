@@ -45,6 +45,8 @@ p {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
+  vertical-align: top;
+  text-align: center;
   cursor: pointer;
   color: #fff6f6;
 }
@@ -287,8 +289,9 @@ outline: 1px solid red;
 .map {
   position: relative;
   left: 232px;
-  
 }
+
+.main-footer {}
 
 .contacts {
   position: absolute;
@@ -309,12 +312,82 @@ outline: 1px solid red;
 
 
 .footer-social {
+  float: left;
+  min-width: 260px;
+  margin-right: 130px;
+}
+
+.social-btn {
   display: inline-block;
-  width: 260px;
-  margin-right: 140px;
+  width: 80px;
+  height: 80px;
+  margin-right: 7px;
+  margin-top: 64px;
+  
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+  border-radius: 50px;
+  background-color: #e1e1e1;
+  position: relative;
+}
+
+.social-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.social-btn-vk::before {
+  width: 26px;
+  height: 20px;
+  background-position: -10px -128px;
+}
+
+.social-btn-fb::before {
+  width: 12px;
+  height: 22px;
+  background-position: -10px -45px;
+}
+
+.social-btn-inst::before {
+  width: 21px;
+  height: 21px;
+  background-position: -10px -87px;
 }
 
 .discount {
-  display: inline-block;
-  width: 560px;
+  float: left;
+  min-width: 560px;
+}
+
+.discount h3 { 
+  font-weight: 700;
+  font-size: 36px;
+  font-size: 36px;
+  text-transform: none;
+  margin-top: 72px;
+  margin-bottom: 0;
+}
+
+.discount p {
+  margin-top: 10px;
+}
+
+
+/* Страница Каталога */
+
+h1 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+}
+
+.filters {
+  float: left;
 }
