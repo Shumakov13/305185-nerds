@@ -51,20 +51,6 @@ p {
   color: #fff6f6;
 }
 
-.write-us {
-  display: inline-block;
-  margin-top: 27px;
-  padding: 15px 45px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  text-decoration: none;
-  cursor: pointer;
-  background-color: #fb565a;
-  color: #fff6f6;
-}
-
 div, article, header, footer, section, a, p, nav {
 outline: 1px solid red;
 } /*Временный стиль */
@@ -117,12 +103,14 @@ outline: 1px solid red;
   color: #fb565a;
 }
 
+
 .user-block {
   float: right;
   padding-top: 25px;
   text-align: right;
   text-transform: uppercase;
   font-weight: 500;
+  position: relative;
 }
 
 .user-block a {
@@ -130,6 +118,23 @@ outline: 1px solid red;
   padding: 10px 0;
   color: #000000;
   text-decoration: none;
+  width: 120px;
+}
+
+.user-block a::before {
+  content: "";
+  position: absolute;
+  top: 68%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.user-block a::before {
+  width: 15px;
+  height: 15px;
+  background-position: -10px -10px;
 }
 
 .user-block a:hover {
@@ -186,10 +191,12 @@ outline: 1px solid red;
 .features-name {
   display: block;
   margin-top: 18px;
+  
 }
 
 .features-item p {
   margin-top: -6px;
+  padding-right: 20px;
 }
 
 .features-item {
@@ -283,12 +290,33 @@ outline: 1px solid red;
 
 .customers-logo {
   display: inline-block;
-    
+  vertical-align: middle;
+  margin-top: 45px;
+  margin-right: 100px;
+  opacity: 0.2;
+}
+
+.customers-logo:nth-child(1) {
+  margin-left: 30px;
+}
+
+.customers-logo:nth-child(3) {
+  margin-right: 120px;
+}
+
+.customers-logo:nth-child(4) {
+  margin-right: 0;
+}
+
+.customers-logo:hover {
+  opacity: 1.0;
 }
 
 .map {
   position: relative;
-  left: 232px;
+  min-height: 417px;
+  background-image: url(../img/map.png);
+  background-position: center;
 }
 
 .main-footer {}
@@ -296,20 +324,53 @@ outline: 1px solid red;
 .contacts {
   position: absolute;
   top: 55px;
-  left: 140px;
-  width: 319px;
+  left: 372px;
+  width: 270px;
   min-height: 310px;
   background-color: #ffffff;
-  text-align: center;
+  text-align: left;
+  padding-left: 50px;
 }
 
 .contacts h3 {
   margin-top: 48px;
+  margin-bottom: 23px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
 }
 
+.contacts p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  padding-right: 60px;
+  margin-bottom: 17px;
+}
+
+.tel {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  text-decoration: none;
+}
+
+.write-us {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 15px 45px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #fb565a;
+  color: #fff6f6;
+}
 
 .footer-social {
   float: left;
@@ -322,7 +383,7 @@ outline: 1px solid red;
   width: 80px;
   height: 80px;
   margin-right: 7px;
-  margin-top: 64px;
+  margin-top: 67px;
   
   font-size: 0;
   vertical-align: top;
@@ -330,6 +391,10 @@ outline: 1px solid red;
   border-radius: 50px;
   background-color: #e1e1e1;
   position: relative;
+}
+
+.social-btn:hover {
+  background-color: #e74246;
 }
 
 .social-btn::before {
@@ -370,7 +435,7 @@ outline: 1px solid red;
   font-size: 36px;
   font-size: 36px;
   text-transform: none;
-  margin-top: 72px;
+  margin-top: 77px;
   margin-bottom: 0;
 }
 
@@ -382,12 +447,81 @@ outline: 1px solid red;
 /* Страница Каталога */
 
 h1 {
+  clear: both;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   color: #000000;
+  text-align: center;
+  padding-top: 60px;
 }
 
 .filters {
   float: left;
+  width: 180px;
+}
+
+.filters h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.filters .from,
+.filters .to {
+  width: 80px;
+  height: 40px;
+}
+
+.gallery {
+  float: right;
+  width: 760px;
+}
+
+.gallery h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.mac-head {
+  opacity: 0.1;
+}
+
+.gallery-card:hover .mac-head {
+  opacity: 1.0;
+}
+
+.gallery-card {
+  display: inline-block;
+  margin-left: 36px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.gallery-card:nth-child(2n) {
+  margin-left: 0;
+}
+
+.buy-block {
+  display: none;
+  width: 360px;
+  min-height: 230px;
+  text-align: center;
+  background-color: #eeeeee;
+  position: absolute;
+  bottom: 0;
+}
+
+.gallery-card:hover .buy-block {
+  display: block;
+}
+
+.buy-block .btn {
+  padding: 10px 50px;
+}
+
+.pagination {
+  clear: both;
+  text-align: center;
 }

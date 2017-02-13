@@ -35,9 +35,9 @@
               <div></div>
             </div>-->
             <label for="price-from-field">От</label>
-            <input type="text" name="price-from" id="price-from-field" value="0">
+            <input class="from" type="text" name="price-from" id="price-from-field" value="0">
             <label for="price-to-field">До</label>
-            <input type="text" name="price-to" id="price-to-field" value="15000">
+            <input class="to" type="text" name="price-to" id="price-to-field" value="15000">
           </div>
           <div class="filter-box">
             <h3>Сетка:</h3>
@@ -64,34 +64,34 @@
           <input class="show-button" type="submit" value="Показать">
         </form>
       </section>
-      <article class="gallery">
+      <section class="gallery">
         <div class="sorting-filters">
           <h3>Сортировать:</h3>
-          <button>По цене</button>
-          <button>По типу</button>
-          <button>По названию</button>
-          <button>По убыванию</button>
-          <button>По возрастанию</button>
+          <a>По цене</a>
+          <a>По типу</a>
+          <a>По названию</a>
+          <a>По убыванию</a>
+          <a>По возрастанию</a>
         </div>
-        <div class="gallery-card">
+        <article class="gallery-card">
           <div class="mac-head"><img src="img/mac-head.png"></div>
           <img src="img/sedona-preview.jpg">
           <div class="buy-block">
             <a href=#>Sedona</a>
             <p>Информационный сайт для туристов</p>
-            <button>9 900 руб.</button>
+            <button class="btn">9 900 руб.</button>
           </div>
-        </div>
-        <div class="gallery-card">
+        </article>
+        <article class="gallery-card">
           <div class="mac-head"><img src="img/mac-head.png"></div>
           <img src="img/pink-preview.jpg">
           <div class="buy-block">
             <a href="#">Pink app</a>
-            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <p>Продуктовый лендинг приложения</p>
             <button>9 900 руб.</button>
           </div>
-        </div>
-        <div class="gallery-card">
+        </article>
+        <article class="gallery-card">
           <div class="mac-head"><img src="img/mac-head.png"></div>
           <img src="img/borodinski-preview.jpg">
           <div class="buy-block">
@@ -99,8 +99,8 @@
             <p>Сайт салона красоты. Для мужчин, да.</p>
             <button>9 900 руб.</button>
           </div>
-        </div>
-        <div class="gallery-card">
+        </article>
+        <article class="gallery-card">
           <div class="mac-head"><img src="img/mac-head.png"></div>
           <img src="img/mishka-preview.jpg">
           <div class="buy-block">
@@ -108,16 +108,16 @@
             <p>Интернет-магазин вязаных игрушек</p>
             <button>9 900 руб.</button>
           </div>
-        </div>
-        <div class="gallery-card">
+        </article>
+        <article class="gallery-card">
           <div class="mac-head"><img src="img/mac-head.png"></div>
           <img src="img/aplus-preview.jpg">
           <div class="buy-block">
             <a href="#">A plus</a>
             <p>Лендинг курсов повышения квалификации</p>
           </div>
-        </div>
-        <div class="gallery-card">
+        </article>
+        <article class="gallery-card">
           <div class="mac-head"><img src="img/mac-head.png"></div>
           <img src="img/kvast-preview.jpg">
           <div class="buy-block">
@@ -125,8 +125,8 @@
             <p>Промо-сайт производителя крафтового кваса</p>
             <button>9 900 руб.</button>
           </div>
-        </div>
-      </article>
+        </article>
+      </section>
       <div class="pagination">
         <a href="#">1</a>
         <a href="#">2</a>
@@ -135,17 +135,16 @@
       </div>
     </main>
     <div class="map">
-        <img src="img/map.png">
         <div class="contacts">
           <h3>Nёrds design studio</h3>
           <p>191186, Санкт-Петербург,
             ул. Б. Конюшенная, д. 19/8</p>
-          <a href="tel:+7(812)275-75-75">тел.+7 (812) 275-75-75</a>
+          <a class="tel" href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
           <a class="write-us" href="#">Напишите нам</a>
       </div>
     </div>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <div class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
@@ -157,7 +156,5 @@
         </div>
       </div>
     </footer>
-    <!--<div class="feedback></div>-->
   </body>
 </html>
-  
