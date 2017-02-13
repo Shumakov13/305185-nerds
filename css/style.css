@@ -55,8 +55,6 @@ div, article, header, footer, section, a, p, nav {
 outline: 1px solid red;
 } /*Временный стиль */
 
-
-
 .main-header {
   min-height: 315px;
   padding-top: 42px;
@@ -103,6 +101,10 @@ outline: 1px solid red;
   color: #fb565a;
 }
 
+.main-navigation a:active {
+  border-bottom: 2px solid #fb585c; 
+}
+
 
 .user-block {
   float: right;
@@ -139,6 +141,10 @@ outline: 1px solid red;
 
 .user-block a:hover {
   color: #fb565a;
+}
+
+.user-block a:active {
+  border-bottom: 2px solid #fb585c; 
 }
 
 .clearfix::after {
