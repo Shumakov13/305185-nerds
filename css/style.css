@@ -184,6 +184,18 @@ outline: 1px solid red;
   float: right;
 }
 
+.slider .btn:hover {
+  background-color: #e74246;
+}
+
+.slider .btn:active {
+  background-color: rgba(215, 55, 59, 1.0);
+}
+
+.btn:active span { /* Общая прозрачность для всех кнопок */
+  opacity: 0.3;
+}
+
 .features {
   margin-bottom: 80px;
 }
@@ -216,12 +228,36 @@ outline: 1px solid red;
   background-color: #fb565a;
 }
 
+.features-item:nth-child(1) .btn:hover {
+  background-color: #e74246;
+}
+
+.features-item:nth-child(1) .btn:active {
+  background-color: #d7373b;
+}
+
 .features-item:nth-child(2) .btn {
   background-color: #00ca74;
 }
 
+.features-item:nth-child(2) .btn:hover {
+  background-color: #00bc6c;
+}
+
+.features-item:nth-child(2) .btn:active {
+  background-color: #00aa62;
+}
+
 .features-item:nth-child(3) .btn {
   background-color: #efc84a;
+}
+
+.features-item:nth-child(3) .btn:hover {
+  background-color: #eab534;
+}
+
+.features-item:nth-child(3) .btn:active {
+  background-color: #e5a722;
 }
 
 .about-us {
@@ -312,6 +348,10 @@ outline: 1px solid red;
   opacity: 1.0;
 }
 
+.customers-logo:active {
+  opacity: 0.1;
+}
+
 .map {
   position: relative;
   min-height: 417px;
@@ -372,6 +412,14 @@ outline: 1px solid red;
   color: #fff6f6;
 }
 
+.write-us:hover {
+  background-color: #e74246;
+}
+
+.write-us:active span {
+  opacity: 0.3;
+}
+
 .footer-social {
   float: left;
   min-width: 260px;
@@ -383,7 +431,7 @@ outline: 1px solid red;
   width: 80px;
   height: 80px;
   margin-right: 7px;
-  margin-top: 67px;
+  margin-top: 68px;
   
   font-size: 0;
   vertical-align: top;
@@ -423,6 +471,10 @@ outline: 1px solid red;
   width: 21px;
   height: 21px;
   background-position: -10px -87px;
+}
+
+.social-btn:active::before {
+  opacity: 0.3;
 }
 
 .discount {
