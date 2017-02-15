@@ -30,14 +30,17 @@
         <form action="#" method="get">
           <div class="filter-box">
             <h3>Стоимость:</h3>
-        <!--<div>
-              <div></div>
-              <div></div>
-            </div>-->
-            <label for="price-from-field">От</label>
-            <input class="from" type="text" name="price-from" id="price-from-field" value="0">
-            <label for="price-to-field">До</label>
-            <input class="to" type="text" name="price-to" id="price-to-field" value="15000">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale"><div style="width: 70%;" class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="15000"></label>
+              </div>
+            </div>
           </div>
           <div class="filter-box">
             <h3>Сетка:</h3>
@@ -74,7 +77,7 @@
           <a>По возрастанию</a>
         </div>
         <article class="gallery-card">
-          <div class="mac-head"><img src="img/mac-head.png"></div>
+          <div class="mac-head"></div>
           <img src="img/sedona-preview.jpg">
           <div class="buy-block">
             <a href=#>Sedona</a>
@@ -83,7 +86,7 @@
           </div>
         </article>
         <article class="gallery-card">
-          <div class="mac-head"><img src="img/mac-head.png"></div>
+          <div class="mac-head"></div>
           <img src="img/pink-preview.jpg">
           <div class="buy-block">
             <a href="#">Pink app</a>
@@ -92,7 +95,7 @@
           </div>
         </article>
         <article class="gallery-card">
-          <div class="mac-head"><img src="img/mac-head.png"></div>
+          <div class="mac-head"></div>
           <img src="img/borodinski-preview.jpg">
           <div class="buy-block">
             <a href="#">Barbershop</a>
@@ -101,7 +104,7 @@
           </div>
         </article>
         <article class="gallery-card">
-          <div class="mac-head"><img src="img/mac-head.png"></div>
+          <div class="mac-head"></div>
           <img src="img/mishka-preview.jpg">
           <div class="buy-block">
             <a href="">Mishka</a>
@@ -110,7 +113,7 @@
           </div>
         </article>
         <article class="gallery-card">
-          <div class="mac-head"><img src="img/mac-head.png"></div>
+          <div class="mac-head"></div>
           <img src="img/aplus-preview.jpg">
           <div class="buy-block">
             <a href="#">A plus</a>
@@ -118,7 +121,7 @@
           </div>
         </article>
         <article class="gallery-card">
-          <div class="mac-head"><img src="img/mac-head.png"></div>
+          <div class="mac-head"></div>
           <img src="img/kvast-preview.jpg">
           <div class="buy-block">
             <a href="#">Kvast</a>
@@ -140,7 +143,7 @@
           <p>191186, Санкт-Петербург,
             ул. Б. Конюшенная, д. 19/8</p>
           <a class="tel" href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
-          <a class="write-us" href="#">Напишите нам</a>
+          <a class="btn" href="#">Напишите нам</a>
       </div>
     </div>
     <footer class="main-footer">
