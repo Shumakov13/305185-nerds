@@ -573,20 +573,20 @@ li:nth-child(3)::before {
 
 .social-btn-vk::before {
   width: 26px;
-  height: 20px;
-  background-position: -10px -128px;
+  height: 15px;
+  background-position: -10px -345px;
 }
 
 .social-btn-fb::before {
   width: 12px;
   height: 22px;
-  background-position: -10px -45px;
+  background-position: -10px -172px;
 }
 
 .social-btn-inst::before {
   width: 21px;
   height: 21px;
-  background-position: -10px -87px;
+  background-position: -10px -214px;
 }
 
 .social-btn:active::before {
@@ -717,6 +717,7 @@ input[type=radio] {
   display: none;
 }
 
+
 .filter-box:nth-child(1) {
   margin-bottom: 53px;
 }
@@ -742,6 +743,14 @@ input[type=radio] {
   margin-top: 27px;
   color: black;
   background-color: #eeeeee;
+}
+
+.filters .btn:hover {
+  background-color: #dfdfdf;
+}
+
+.filters .btn:active {
+  
 }
 
 .gallery {
@@ -828,7 +837,43 @@ input[type=radio] {
   background-color: #fb565a;
 }
 
+.buy-block .btn:hover {
+  background-color: #e74246;
+}
+
+.buy-block .btn:active {
+  background-color: #d7373b;
+}
+
 .pagination {
   clear: both;
+  display: block;
   text-align: center;
+}
+
+.pagination a {
+  padding: 15px 20px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  vertical-align: top;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  background-color: #eeeeee;
+  border: 3px solid #eeeeee;
+}
+
+.pagination a:nth-child(4) {
+  padding: 15px 100px;
+}
+
+.write-us {
+  display: none;
+  width: 960px;
+  height: 590px;
+  border: 1px solid black;
 }
