@@ -52,7 +52,7 @@ p {
   border-radius: 3px;
 }
 
-div, article, header, footer, section, a, p, nav {
+/*div, article, header, footer, section, a, p, nav {
 outline: 1px solid red;
 } /*Временный стиль */
 
@@ -339,6 +339,12 @@ outline: 1px solid red;
   width: 660px;
   float: left;
   padding-top: 35px;
+  position: relative;
+}
+
+.about-left ul {
+  padding-left: 0;
+  padding-left: 35px;
 }
 
 .about-left h2 {
@@ -346,10 +352,6 @@ outline: 1px solid red;
   font-size: 45px;
   line-height: 45px;
   margin-bottom: 35px;
-}
-
-.about-left p {
-  
 }
 
 .about-left h4 {
@@ -361,6 +363,28 @@ outline: 1px solid red;
 .about-left li {
   display: block;
   margin-bottom: 24px;
+  
+}
+
+.about-left li::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  left: 1px;
+}
+
+li:nth-child(1)::before {
+  bottom: 130px;
+}
+
+li:nth-child(2)::before {
+  bottom: 82px;
+}
+
+li:nth-child(3)::before {
+  bottom: 34px;
 }
 
 .about-right {
@@ -379,14 +403,23 @@ outline: 1px solid red;
   line-height: 45px;
   color: #000000;
   padding-top: 18px;
+  width: 105px;
   text-align: left;
 }
 
+.about-right td {
+  font-size: 16px;
+  line-height: 18px;
+  padding-top: 15px;
+  
+}
+
 .about-right sup {
-  font-size: 25px;
+  font-size: 26px;
 }
 
 .customers {
+  position: relative;
   min-height: 180px;
   font-size: 0px;
   margin-top: 26px;
@@ -405,16 +438,43 @@ outline: 1px solid red;
   text-align: center;
 }
 
-.customers-logo img {
-  vertical-align: middle;
-}
-
 .customers-logo:hover {
   opacity: 1.0;
 }
 
 .customers-logo:active {
   opacity: 0.1;
+}
+
+.customers-logo::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
+}
+
+.customers-logo:nth-child(1)::before {
+  top: 65px;
+  left: 279px;
+}
+
+.customers-logo:nth-child(2)::before {
+  top: 65px;
+  left: 579px;
+}
+
+.customers-logo:nth-child(3)::before {
+  top: 65px;
+  right: 279px;
+}
+
+.customers-logo:nth-child(4)::before {
+  display: none;
+}
+
+.customers-logo img {
+  vertical-align: middle;
 }
 
 .map {
@@ -424,8 +484,6 @@ outline: 1px solid red;
   background-position: center;
   background-repeat: no-repeat;
 }
-
-.main-footer {}
 
 .contacts {
   position: absolute;
