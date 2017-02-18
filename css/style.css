@@ -872,7 +872,6 @@ input[type=radio] {
 }
 
 .pagination a {
-  padding: 15px 20px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -884,11 +883,13 @@ input[type=radio] {
   cursor: pointer;
   color: black;
   background-color: #eeeeee;
+  padding: 15px 21px;
+  margin-right: 5px;
   border-radius: 3px;
 }
 
 .pagination a:nth-child(4) {
-  padding: 15px 100px;
+  padding: 15px 80px;
 }
 
 .pagination a:hover {
