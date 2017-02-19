@@ -10,7 +10,7 @@
   <body>
     <header class="main-header">
       <div class="container clearfix">
-        <a href="index.html"><img class="logo" src="img/nerds-logo.png" alt="Логотип Нёрдс"></a>
+        <a href="index.html"><img class="logo" src="img/nerds-logo.png" alt="Логотип Нёрдс" width="160" height="65"></a>
         <nav class="main-navigation">
           <ul>
             <li><a href="index.html">Студия</a></li>
@@ -78,7 +78,7 @@
         </div>
         <article class="gallery-card">
           <div class="mac-head"></div>
-          <img src="img/sedona-preview.jpg">
+          <img src="img/sedona-preview.jpg" alt="Седона превью" width="360" height="576">
           <div class="buy-block">
             <a href=#>Sedona</a>
             <p>Информационный сайт для туристов</p>
@@ -87,16 +87,16 @@
         </article>
         <article class="gallery-card">
           <div class="mac-head"></div>
-          <img src="img/pink-preview.jpg">
+          <img src="img/pink-preview.jpg" alt="Пинк превью" width="360" height="576">
           <div class="buy-block">
             <a href="#">Pink app</a>
-            <p>Продуктовый лендинг приложения </p>
+            <p>Продуктовый лендинг приложения для IOS и Android</p>
             <button class="btn">9 900 руб.</button>
           </div>
         </article>
         <article class="gallery-card">
           <div class="mac-head"></div>
-          <img src="img/borodinski-preview.jpg">
+          <img src="img/borodinski-preview.jpg" alt="Бородинский превью" width="360" height="576">
           <div class="buy-block">
             <a href="#">Barbershop</a>
             <p>Сайт салона красоты. Для мужчин, да.</p>
@@ -105,7 +105,7 @@
         </article>
         <article class="gallery-card">
           <div class="mac-head"></div>
-          <img src="img/mishka-preview.jpg">
+          <img src="img/mishka-preview.jpg" alt="Мишка превью" width="360" height="576">
           <div class="buy-block">
             <a href="">Mishka</a>
             <p>Интернет-магазин вязаных игрушек</p>
@@ -114,7 +114,7 @@
         </article>
         <article class="gallery-card">
           <div class="mac-head"></div>
-          <img src="img/aplus-preview.jpg">
+          <img src="img/aplus-preview.jpg" alt="А-плюс превью" width="360" height="576">
           <div class="buy-block">
             <a href="#">A plus</a>
             <p>Лендинг курсов повышения квалификации</p>
@@ -123,7 +123,7 @@
         </article>
         <article class="gallery-card">
           <div class="mac-head"></div>
-          <img src="img/kvast-preview.jpg">
+          <img src="img/kvast-preview.jpg" alt="Кваст превью" width="360" height="576">
           <div class="buy-block">
             <a href="#">Kvast</a>
             <p>Промо-сайт производителя крафтового кваса</p>
@@ -159,17 +159,24 @@
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
-      <div class="write-us">
-      <form action="#" method="get">
-        <h2>Напишите нам</h2>
-        <label for="name-field">Ваше имя</label> 
-        <input type="text" name="name" id="name-field" value="name">
-        <label for="email-field">Ваш e-mail</label>
-        <input type="text" name="email" id="email-field" value="email">
-        <label for="text-field">Текст письма</label>
-        <textarea name="text" id="text-field" rows=50 cols=50>В свободной форме</textarea>
+    </footer>
+    <div class="modal-content">
+      <button class="modal-content-close" title="Закрыть">Закрыть</button>
+      <h2 class="modal-content-title">Напишите нам</h2>
+      <form class="write-us" action="" method="get">
+        <div class="username-block">
+        <label for="username-field">Ваше имя:</label>
+        <input type="text" name="username" id="username-field" value="Представьтесь, пожалуйста">
+        </div>
+        <div class="email-block">
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="text" name="email" id="email-field" value="Для отправки ответа">
+        </div>
+        <label for="text-area">Текст письма:</label>
+        <textarea name="text" id="text-area">В свободной форме</textarea>
+        <button class="btn">Отправить</button>
       </form>
     </div>
-    </footer>
+    <div class="modal-overlay"></div>
   </body>
 </html>
