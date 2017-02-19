@@ -4,7 +4,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #283136;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   background: #ffffff;
 }
 
@@ -13,7 +13,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   vertical-align: top;
@@ -699,7 +699,7 @@ li:nth-child(3)::before {
   line-height: 22px;
   font-weight: 400;
   color: #283136;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   text-align: center;
   border-radius: 5px;
 }
@@ -736,7 +736,7 @@ li:nth-child(3)::before {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   text-align: left;
   margin-bottom: 19px;
 }
@@ -830,7 +830,7 @@ input[type="checkbox"] + label:hover::before {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
   margin-right: 26px;
   cursor: pointer;
@@ -965,7 +965,7 @@ input[type="checkbox"] + label:hover::before {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   vertical-align: top;
@@ -1013,7 +1013,7 @@ input[type="checkbox"] + label:hover::before {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   vertical-align: top;
@@ -1133,7 +1133,7 @@ button {
   line-height: 24px;
   font-weight: 400;
   color: #283136;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   color: rgba(68, 68, 68, 0.5);
   border-color: rgba(215, 220, 222, 1.0);
 }
@@ -1175,7 +1175,7 @@ button {
   line-height: 24px;
   font-weight: 400;
   color: #283136;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   color: rgba(68, 68, 68, 0.5);
   border-color: rgba(215, 220, 222, 1.0);
 }
