@@ -83,10 +83,9 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* .main-navigation .current-page {
+.main-navigation .current-page {
   box-shadow: 0 14px 0 -12px #fb565a;
-} Стиль для активной страницы */ 
-
+}
 
 .user-block {
   float: right;
@@ -1242,4 +1241,9 @@ button {
 
 .modal-overlay-show {
   display: block;
+}
+
+.input-error {
+  color: rgba(231, 66, 70, 1);
+  border: 2px solid rgba(231, 66, 70, 1);
 }
