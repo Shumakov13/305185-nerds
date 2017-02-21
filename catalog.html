@@ -5,7 +5,7 @@
     <title>NЁRDS DESIGN STUDIO</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/compressed.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -15,7 +15,7 @@
           <ul>
             <li><a href="index.html">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
+            <li><a class="current-page" href="catalog.html">Магазин</a></li>
             <li><a href="#">Контакты</a></li> 
           </ul>
         </nav>
@@ -132,19 +132,19 @@
         </article>
       </section>
       <div class="pagination">
-        <a href="#">1</a>
+        <a class="page-number" href="#">1</a>
         <a href="#">2</a>
         <a href="#">3</a>
         <a href="#">Следующая</a>
       </div>
     </main>
-    <div class="map catalog-content">
+    <div class="map">
         <div class="contacts">
           <h3>Nёrds design studio</h3>
           <p>191186, Санкт-Петербург,
             ул. Б. Конюшенная, д. 19/8</p>
           <a class="tel" href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
-          <a class="btn" href="#">Напишите нам</a>
+          <a class="feedback btn" href="#">Напишите нам</a>
       </div>
     </div>
     <footer class="main-footer">
@@ -178,5 +178,6 @@
       </form>
     </div>
     <div class="modal-overlay"></div>
+    <script src="js/popup.js"></script>
   </body>
 </html>

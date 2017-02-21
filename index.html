@@ -5,12 +5,12 @@
     <title>NЁRDS DESIGN STUDIO</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/compressed.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container clearfix">
-        <a href="#"><img class="logo" src="img/nerds-logo.png" alt="Логотип Нёрдс" width="160" height="65"></a>
+        <a><img class="logo" src="img/nerds-logo.png" alt="Логотип Нёрдс" width="160" height="65"></a>
         <nav class="main-navigation">
           <ul>
             <li><a href="#">Студия</a></li>
@@ -111,16 +111,16 @@
       </section>
       <div class="customers">
         <a class="customers-logo" href="https://htmlacademy.ru/">
-          <img src="img/htmlacademy-logo.png" alt="HTML Academy" width="199" height="68">
+          <img src="img/htmlacademy-logo.jpg" alt="HTML Academy" width="260" height="180">
         </a>
         <a class="customers-logo" href="#">
-          <img src="img/borodinski-logo.png" alt="Барбершоп «Бородинский»" width="209" height="90">
+          <img src="img/borodinski-logo.jpg" alt="Барбершоп «Бородинский»" width="260" height="180">
         </a>
         <a class="customers-logo" href="#">
-          <img src="img/pink-logo.png" alt="Pink" width="185" height="52">
+          <img src="img/pink-logo.jpg" alt="Pink" width="260" height="180">
         </a>
         <a class="customers-logo" href="#">
-          <img src="img/mishka-logo.png" alt="Mishka" width="173" height="84">
+          <img src="img/mishka-logo.jpg" alt="Mishka" width="260" height="180">
         </a>
       </div>
     </main>
@@ -130,7 +130,7 @@
           <p>191186, Санкт-Петербург,
             ул. Б. Конюшенная, д. 19/8</p>
           <a class="tel" href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
-          <a class="btn" href="#">Напишите нам</a>
+          <a class="feedback btn" href="#">Напишите нам</a>
       </div>
     </div>
     <footer class="main-footer">
@@ -151,12 +151,12 @@
       <h2 class="modal-content-title">Напишите нам</h2>
       <form class="write-us" action="https://echo.htmlacademy.ru" method="get">
         <div class="username-block">
-        <label for="username-field">Ваше имя:</label>
-        <input type="text" name="username" id="username-field" value="Представьтесь, пожалуйста">
+          <label for="username-field">Ваше имя:</label>
+          <input type="text" name="username" id="username-field" value="Представьтесь, пожалуйста">
         </div>
         <div class="email-block">
-        <label for="email-field">Ваш e-mail:</label>
-        <input type="text" name="email" id="email-field" value="Для отправки ответа">
+          <label for="email-field">Ваш e-mail:</label>
+          <input type="text" name="email" id="email-field" value="Для отправки ответа">
         </div>
         <label for="text-area">Текст письма:</label>
         <textarea name="text" id="text-area">В свободной форме</textarea>
@@ -164,5 +164,6 @@
       </form>
     </div>
     <div class="modal-overlay"></div>
+    <script src="js/popup.js"></script>
   </body>
 </html>
