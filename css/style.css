@@ -1023,8 +1023,8 @@ li:nth-child(3)::before {
   clear: both;
   text-align: center;
   margin-left: 400px;
-  margin-top: 64px;
-  margin-bottom: 80px;
+  margin-top: 63px;
+  margin-bottom: 69px;
 }
 
 .pagination a {
@@ -1038,8 +1038,9 @@ li:nth-child(3)::before {
   cursor: pointer;
   color: black;
   background-color: #eeeeee;
-  padding: 14px 21px;
-  margin-right: 6px;
+  padding: 15px 20px;
+  padding-right: 21px;
+  margin-right: 7px;
   border-radius: 3px;
 }
 
