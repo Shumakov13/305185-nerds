@@ -1145,7 +1145,8 @@ button {
   font-weight: 700;
 }
 
-.write-us input[type="text"] {
+.write-us .username,
+.write-us .email {
   width: 330px;
   height: 45px;
   margin-top: 7px;
@@ -1162,11 +1163,13 @@ button {
   border-color: rgba(215, 220, 222, 1.0);
 }
 
-.write-us input[type="text"]:hover {
+.write-us .username:hover,
+.write-us .email:hover {
   border-color: rgba(180, 185, 187, 1.0);
 }
 
-.write-us input[type="text"]:focus {
+.write-us .username:focus,
+.write-us .email:focus {
   color: rgba(68, 68, 68, 1);
   border-color: rgba(0, 0, 0, 1);
 }
@@ -1243,7 +1246,7 @@ button {
   display: block;
 }
 
-.input-error {
+.write-us .input-error {
   color: rgba(231, 66, 70, 1);
   border: 2px solid rgba(231, 66, 70, 1);
 }
