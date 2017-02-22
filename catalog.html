@@ -46,14 +46,14 @@
             <h3>Сетка:</h3>
             <input type="radio" name="grid-choice" id="adaptive-grid-field" value="adaptive" checked>
             <label for="adaptive-grid-field">Адаптивная</label>
-            <input type="radio" name="grid-choice" id="fixed-grid-field" value="fixed">
+            <input type="radio" name="grid-choice" id="fixed-grid-field" value="fixed" disabled>
             <label for="fixed-grid-field">Фиксированная</label>
             <input type="radio" name="grid-choice" id="elastic-grid-field" value="elastic">
             <label for="elastic-grid-field">Резиновая</label>
           </div>
           <div class="filter-box">
             <h3>Особенности:</h3>
-            <input type="checkbox" name="features-choice" id="slider-field" value="slider">
+            <input type="checkbox" name="features-choice" id="slider-field" value="slider" disabled>
             <label for="slider-field">Слайдер</label>
             <input type="checkbox" name="features-choice" id="advantages-unit-field" value="advantages-unit">
             <label for="advantages-unit-field">Блок преимуществ</label>
@@ -171,7 +171,7 @@
         </div>
         <div class="email-block">
           <label for="email-field">Ваш e-mail:</label>
-          <input class="email" type="text" name="email" id="email-field" value="Для отправки ответа">
+          <input class="email modal-error" type="text" name="email" id="email-field" value="Для отправки ответа">
         </div>
         <label for="text-area">Текст письма:</label>
         <textarea name="text" id="text-area">В свободной форме</textarea>

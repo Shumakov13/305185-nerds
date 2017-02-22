@@ -760,10 +760,6 @@ li:nth-child(3)::before {
   color: black;
 }
 
-.filter-box input[type="radio"]:disabled + label {
-  color: rgba(40, 49, 54, 0.3);
-}
-
 .filter-box input[type="radio"],
 .filter-box input[type="checkbox"] {
   display: none;
@@ -782,6 +778,11 @@ li:nth-child(3)::before {
   width: 25px;
   height: 25px;
   opacity: 0.4;
+}
+
+.filter-box input[type="radio"]:disabled + label,
+.filter-box input[type="checkbox"]:disabled + label {
+  color: rgba(40, 49, 54, 0.3);
 }
 
 .filter-box input[type="radio"]:disabled + label::before,
