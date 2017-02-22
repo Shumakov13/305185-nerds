@@ -483,7 +483,13 @@ li:nth-child(3)::before {
   background-color: #e9e5dc;
   background-image: url(../img/map.png);
   background-position: center;
-  background-repeat: no-repeat;
+}
+
+.map iframe {
+  position: relative;
+  vertical-align: middle;
+  left: 50%;
+  margin-left: -720px;
 }
 
 .contacts {
@@ -1091,6 +1097,8 @@ button {
 
 .modal-content-show {
   display: block;
+  -webkit-animation: bounce 0.6s;
+  animation: bounce 0.6s;
 }
 
 .modal-content-close {
@@ -1248,7 +1256,21 @@ button {
   display: block;
 }
 
-.write-us .input-error {
+.write-us .modal-error {
   color: rgba(231, 66, 70, 1);
   border: 2px solid rgba(231, 66, 70, 1);
+}
+
+@-webkit-keyframes bounce {
+  0% { transform: translateY(-2000px); }
+  70% { transform: translateY(30px); }
+  90% { transform: translateY(-10); }
+  100% { transform: translateY(0);}
+}
+
+@keyframes bounce {
+  0% { transform: translateY(-2000px); }
+  70% { transform: translateY(30px); }
+  90% { transform: translateY(-10); }
+  100% { transform: translateY(0); }
 }
